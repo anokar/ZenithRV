@@ -1,4 +1,6 @@
-﻿# ZenithRV (zig-kernel-riscv-qemu)
+Needs to by fixet, testet
+ 
+# ZenithRV (zig-kernel-riscv-qemu)
 mit ki und humans gemacht!!
 Milestone 12: ZenithRV mit Input-Layer, Round-Robin-Demo, RAMFS/UXFS, virtio-blk, Boot-Logo und erster Framebuffer-Shellzeile.
 
