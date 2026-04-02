@@ -19,7 +19,7 @@ Milestone 12: ZenithRV mit Input-Layer, Round-Robin-Demo, RAMFS/UXFS, virtio-blk
 ## Build und Start
 
 ```powershell
-cd C:\Users\Anokar\Documents\Playground\zig-kernel-riscv-qemu
+cd C:\Users\(user)\zig-kernel-riscv-qemu
 zig build
 zig build run
 ```
@@ -67,16 +67,7 @@ Im Container:
 zig build
 ```
 
-## GitHub Publish
 
-```powershell
-git init
-git add .
-git commit -m "Initial ZenithRV milestone"
-git branch -M main
-git remote add origin https://github.com/<user>/ZenithRV.git
-git push -u origin main
-```
 
 CI ist vorbereitet in `.github/workflows/ci.yml` und baut bei Push/PR automatisch mit `zig build`.
 
