@@ -2,6 +2,8 @@
 mit ki und humans gemacht!!
 Milestone 12: ZenithRV mit Input-Layer, Round-Robin-Demo, RAMFS/UXFS, virtio-blk, Boot-Logo und erster Framebuffer-Shellzeile.
 
+LOGO Fiele: 62505d4d-1779-4096-a951-3da39fff350a.png
+
 ## Was jetzt funktioniert
 
 - Bare-Metal Boot auf QEMU `virt` (RISC-V 64)
