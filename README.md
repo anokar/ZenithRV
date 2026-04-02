@@ -1,3 +1,5 @@
+![ZenithRV Logo](62505d4d-1779-4096-a951-3da39fff350a.png)
+
 Needs to by fixet, testet
  
 # ZenithRV (zig-kernel-riscv-qemu)
