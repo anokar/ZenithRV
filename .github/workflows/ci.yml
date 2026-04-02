@@ -1,0 +1,28 @@
+﻿name: CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Zig
+        run: |
+          set -eux
+          ZIG_VERSION="0.16.0-dev.2682+02142a54d"
+          ZIG_ARCH="x86_64-linux"
+          curl -fL "https://ziglang.org/builds/zig-${ZIG_ARCH}-${ZIG_VERSION}.tar.xz" -o zig.tar.xz
+          tar -xf zig.tar.xz
+          echo "$PWD/zig-${ZIG_ARCH}-${ZIG_VERSION}" >> "$GITHUB_PATH"
+
+      - name: Zig version
+        run: zig version
+
+      - name: Build kernel
+        run: zig build

@@ -1,0 +1,6 @@
+﻿.git
+.zig-cache
+zig-out
+disk.img
+*.log
+boot-*.log
