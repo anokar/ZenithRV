@@ -62,7 +62,14 @@ docker build -t zenithrv-dev .
 Container starten:
 
 ```powershell
-docker run --rm -it -v ${PWD}:/workspace zenithrv-dev
+docker run --rm -it `
+  -v ${PWD}:/workspace `
+  -v zig-local-cache:/zig-local-cache `
+  -v zig-global-cache:/zig-global-cache `
+  -e ZIG_LOCAL_CACHE_DIR=/zig-local-cache `
+  -e ZIG_GLOBAL_CACHE_DIR=/zig-global-cache `
+  zenithrv-dev
+
 ```
 
 Im Container:
