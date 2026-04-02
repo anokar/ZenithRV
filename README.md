@@ -135,3 +135,7 @@ Mit `q` kommst du sauber zur Shell zurueck.
 
 Beim `zig build run` wird automatisch `disk.img` als `virtio-blk` eingebunden.
 Die Datei liegt im Projektordner und kann jederzeit geloescht/neu erzeugt werden.
+
+
+
+next version filesystem , folderstruckture
